@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports</title>
+
+    <!-- Stylesheet and external Javascript -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+                <!-- Nav Bar -->
+                    <div id="homepageheader">
+                        <nav class="nav-bar">
+                            <span class="nav-button" onclick="document.getElementById('audioPlayer').play()">
+                                <img style="width: 35px; height: 35px; margin: 5px;" class="nav-img" src="images/onbutton.png" alt="onbutton">
+                            </span>
+                            <button onclick="location.href='index.html'" class="nav-button">Otto</button>
+                            <button onclick="location.href='controlpanel.html'" class="nav-button">BCI</button>
+                            <button onclick="location.href='location.html'" class="nav-button">Biomed</button>
+                            <button onclick="location.href='logs.html'" class="nav-button">Farming</button>
+                            <button onclick="location.href='updates.html'" class="nav-button">Tech</button>
+                            <button onclick="location.href='vision.html'" class="nav-button">Cars</button>
+                            <button onclick="location.href='ourclass.html'" class="nav-button">Portfolio</button>
+
+                            <span class="nav-button" onclick="document.getElementById('audioPlayer').play()">
+                                <img style="width: 35px; height: 35px; margin: 5px;" class="nav-img" src="images/onbutton.png" alt="onbutton">
+                            </span>
+
+                                <input class="navsearchbar" type="text" placeholder="">
+
+                        </nav>
+                    </div>
+                    <hr>
+                <!-- End of Nav Bar -->
+
+                <!-- Otto v1 -->
+                    <div class="quickOttoflexbox" style="z-index: 1001;">
+                        <div class="quickOttoflexbox-item">
+                            <span class="hiddenquickotto-text">
+
+                                <div class="quickottoUI"> <!-- (no class) Class doesn't need to be integrated -->
+                                <!-- Otto Nav -->
+                                    <nav class="quickottaUInav"> <!-- (no class) Class doesn't need to be integrated -->
+                                        <button class="quickottohomebutton" onclick="showScreen('home')">
+
+                                            <img src="images/ottohomeapptransparentimg.png" alt="Home" class="ottohomeappimg" style="display: flex; position: absolute; height: 95%; width: 95%; top: 1.25%;">
+
+                                        </button>
+                                        <button class="quickottodmbutton" onclick="showScreen('chat')">
+
+                                            <img src="images/ottomessageapptransparentimg.png" alt="Home" class="ottohomeappimg" style="display: flex; position: absolute; height: 99%; width: 99%;">
+
+                                        </button>
+                                        <button class="quickottovcbutton" onclick="showScreen('vc')">
+
+                                            <img src="images/ottophoneapptransparentimg.png" alt="Home" class="ottohomeappimg" style="display: flex; position: absolute; height: 99%; width: 99%;">
+
+                                        </button>
+                                        <button class="quickottocogbutton" onclick="showScreen('cog')">
+
+                                            <img src="images/ottosettingsapptransparentimg.png" alt="Home" class="ottohomeappimg" style="display: flex; position: absolute; height: 99%; width: 99%;">
+
+                                        </button>
+                                        <button class="quickottoaibutton" onclick="showScreen('ai')">
+                                            <img src="images/ottoaiapptransparentimg.png" alt="Home" class="ottohomeappimg" style="display: flex; position: absolute; height: 99%; width: 99%;">
+                                        </button>
+                                    </nav>
+                                <!-- End of Otto Nav -->
+                                
+                                <!-- Homepage Screen --> <!-- This is a weird line of code !!! refer to quickottoflexbox-hover & .hiddenquickotto-text idek tbh !!! -->
+                                    <div class="screen" id="home">
+
+                                        <!-- Homepage 1 -->
+                                        <div style=""> <!-- Homepage Screen Slider -->
+                                            <section style=""> <!-- Homepage Screen 1 Slide -->
+                                                <!-- Homepage Notifications Button -->
+                                                <button class="quickottohomenotificationsbutton" onclick="showScreen('home-notifications')">
+                                                    Notifications (1)
+                                                </button>
+
+                                                <!-- Homepage Weather Button -->
+                                                
+                                                <button class="quickottohomeweatherbutton" onclick="showScreen('home-weather')">
+                                                    <div>Partly Cloudy 75&deg;<br>
+                                                        with a Light Breeze
+                                                        <img class="quickottohomeweatherbuttonimg" src="images/ottopartlycloudyandsunnytransparentimg.png" alt="Ottofileupload">
+                                                    </div>
+                                                </button>
+
+                                                <!-- Homepage Calendar Button -->
+                                                <button class="quickottohomecalendarbutton" onclick="showScreen('home-calendar')">
+                                                    <div>No events today
+                                                    </div>
+                                                </button>
+
+                                                <!-- Homepage Photo Button -->
+                                                <button class="quickottohomephotobutton" onclick="showScreen('home-photos')">
+                                                    <div>No photos yet
+                                                    </div>
+                                                </button>
+
+                                                <!-- Homepage World Clock Button -->
+                                                <button class="quickottohomeworldclockbutton" onclick="showScreen('home-worldclock')">
+                                                    <div>
+                                                        <p style="font-size: .7em; ">
+                                                            Dallas
+                                                            New York
+                                                            London
+                                                            Tokyo
+                                                        </p>
+                                                    </div>
+                                                </button>
+
+                                                <!-- Homepage Live Video Player Button -->
+                                                <button class="quickottohomelivevideoplayerbutton" onclick="showScreen('home-pip')">
+                                                    <div>Not Playing</div>
+                                                </button>
+                                            </section>
+                                        
+                                            <!-- Homepage 2 -->
+                                            <section> <!-- Homepage Screen 2 Slide -->
+                                                
+                                            </section>
+                                        </div>
+
+                                    </div>
+                                <!-- Homepage Notifications Screen -->
+                                    <div class="screen" id="home-notifications" style="display: none;">
+                                    <!-- Notifications Subpage Back Button -->
+                                        <button class="quickottobackbutton" onclick="showScreen('home')">
+                                            <
+                                        </button>
+                                        <br>
+                                        <br>
+
+                                    <!-- Incoming Notification (1) Message Page Button -->
+                                        <div style="overflow-y: auto; height: 30vh; scrollbar-width: none;">
+                                            <button class="quickottohomenotificationsbox" style="display: flex; position: relative;" onclick="showScreen('home-notifications-incomingmessage1page')">
+                                                Message from Maverick
+                                            </button>
+                                            <div style="padding-top: 1vh;">
+                                                <button class="quickottohomenotificationsbox" style="display: flex; position: relative;" onclick="showScreen('home-notifications-incomingmessage2page')">
+                                                    <strong>Voice Call from Maverick</strong>
+                                                </button> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <!-- Homepage Notifications Incoming Message 1 Notification -->
+                                            <div class="screen" id="home-notifications-incomingmessage1page" style="display: none;">
+                                                <button class="quickottobackbutton" style="display: flex; position: relative;" onclick="showScreen('home-notifications')">
+                                                    <
+                                                </button>
+
+                                                <p>What's up Jace! Thank you for the fried rice and playing with the squirrels. Next time let's have another picnic with Cinnamon!</p>
+                                                <input type="text" placeholder="Reply!" wrap="" class="quickottonotificationsreplybutton">
+                                            </div>
+
+                                            <div class="screen" id="home-notifications-incomingmessage2page" style="display: none;">
+                                                <button class="quickottobackbutton" style="display: flex; position: relative;" onclick="showScreen('home-notifications')">
+                                                    <
+                                                </button>
+
+                                                <p>"What's up Jace! Call me back, I'm picking you up in the slingshot!"</p>
+                                                <input type="text" placeholder="Reply!" wrap="" class="quickottonotificationsreplybutton">
+                                        <!-- End of Homepage Notifications Incoming Message 1 Notification -->
+
+                                            <!-- Callback Button For Notification 2 -->
+                                                <div style="padding-top: 1vh;">
+                                                    <button class="quickottonotificationcallbackbutton" onclick="showScreen('callbackpage')">
+                                                        Call Back!
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        <!-- Active Call Page -->
+                                            <div class="screen" id="callbackpage" style="display: none;">
+                                                <p class="quickottocallpagecallertext">Maverick</p>
+                                                <div class="quickottocallpagecalleranswerbutton"><p style="padding-top: 1vh;">Answer</p></div>
+                                                <div class="quickottocallpagecallerdeclinebutton" onclick="showScreen('home-notifications-incomingmessage2page')"><p style="padding-top: 1.1vh;">Decline</p></div>
+                                            </div>
+                                        <!-- End of Active Call Page -->
+
+                                <!-- End Homepage Notifications Screen -->
+                                <!-- Homepage Weather Screen -->
+                                    <div class="screen" id="home-weather" style="display: none;">
+                                        <div class="quickottoweatherdailynowoverview">
+                                            <p style="display: flex; position: absolute; top: -10%; right: 40%; font-size: 1.1em; justify-content: center; text-align: center;">Dallas</p>
+                                            <p style="display: flex; position: absolute; top: 8%; right: 42%; font-size: 1.5em; justify-content: center; text-align: center;">75&deg;</p>
+                                            <p style="display: flex; position: absolute; top: 40%; right: 43%; font-size: 1.0em; justify-content: center; text-align: center;">Clear<br></p>
+                                            <p style="display: flex; position: absolute; top: 63%; right: 35%; font-size: .9em; justify-content: center; text-align: center;">H:81&deg; L54&deg;</p>
+                                        </div>
+
+                                            <!-- Daily Hourly Update of Weather - Really Awesome -->
+                                            <div class="quickottoweatherdailynowhourlyoverview">
+
+                                                <div style="display: flex; position: relative; width: 35vw; top: 5%; scroll-behavior: smooth;">
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%; left: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">Now</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">1HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">2HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">3HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">4HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">5HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">6HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">7HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">8HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">9HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">10HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">11HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+                                                    <div class="" style="display: flex; position: relative; justify-content: center; height: 7.75vh; width: 5vw; top: 0%;">
+                                                        <p style="display: flex; position: absolute; top: -25%; text-align: center;">12HR</p>
+                                                        <img style="display: flex; position: absolute; height: 3.75vh; width: 1.875vw; top: 27%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                        <p style="display: flex; position: absolute; top: 52.5%;">70&deg;</p>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+
+                                            <!-- Daily Hourly Update of Weather - Really Awesome -->
+                                            <div class="quickottoweatherweeklyoverview">
+
+                                                <div style="display: flex; position: absolute; width: 97; top: 1%; left: 5%; color: white; font-size: 1.1em;">7-Day Forecast</div>
+                                                <br>
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 20%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Today</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 45%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Fri</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 70%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Sat</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 95%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Sun</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 120%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Mon</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 145%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Tues</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 170%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Wed</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 195%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Thu</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 220%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Fri</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                                <div style="display: flex; position: absolute; height: 25%; width: 97.7%; top: 245%; left: 2.5%; color: white; font-size: 1.2em;">
+                                                    <div>Sat</div>
+                                                    <img style="display: flex; position: absolute; height: 100%; width: 15%; top: -12.5%; left: 25%;" src="images/ottocloudytransparentimg.png" alt="Ottofileupload">
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 43%;">71&deg;</div>
+                                                        <div style="display: flex; position: absolute; height: 15%; width: 23.7%; top: 37.5%; left: 57%; background-color: white; border-radius: 3vw;">
+                                                            <div style="display: flex; position: absolute; height: 100%; width: 35%; left: 50%; background-color: royalblue; border-radius: 3vw;"></div>
+                                                        </div>
+                                                    <div style="display: flex; position: absolute; top: 7%; left: 82.7%;">77&deg;</div>
+                                                </div>
+
+                                            </div>
+
+                                    </div>
+
+                                <!-- End of Homepage Weather Screen -->
+
+                                <!-- Calendar Screen -->
+
+                                    <div class="screen" id="home-calendar" style="display: none;">
+                                        <div class="quickottohomecalendarcalendar">
+
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 7.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 1 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 20.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 2 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 32.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 3 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 45%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 4 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 57.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 5 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 69.75%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 6 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 7%; left: 82.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 7 </div>
+
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 7.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 8 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 20.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 9 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 32.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 10 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 45%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 11 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 57.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 12 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 69.75%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 13 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 25.5%; left: 82.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 14 </div>
+
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 7.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 15 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 20.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 16 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 32.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 17 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 45%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 18 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 57.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 19 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 69.75%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 20 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 44%; left: 82.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 21 </div>
+
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 7.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 22 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 20.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 23 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 32.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 24 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 45%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 25 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 57.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 26 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 69.75%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 27 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 62.5%; left: 82.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 28 </div>
+
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 81%; left: 7.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 29 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 81%; left: 20.25%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 30 </div>
+                                            <div style="display: flex; position: absolute; height: 10%; width: 9%; top: 81%; left: 32.5%; font-size: 1.2em; color: white; justify-content: center; cursor: pointer;"> 31 </div>
+
+                                        </div>
+
+                                            <div class="quickottohomecalendardayoverview">
+
+                                                <div style="display: flex; position: absolute; font-size: 1.1em; top: 3%; left: 7%; color: white;">December 26, 2025</div>
+                                                
+                                            </div>
+
+                                    </div>
+                                <!-- End of Calendar Screen -->
+
+                                <!-- Photos Screen -->
+
+                                    <div class="screen" id="home-photos" style="display: none;">
+
+                                        <div class="allphotosscrollpage" style="display: flex; position: absolute; flex-direction: column 2; flex-wrap: wrap; word-wrap: break-word; overflow-wrap: break-word; overflow-y: scroll; scrollbar-width: none; height: 75%; width: 81.5%; gap: 2.75%; justify-content: center;">
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: ;"></div>
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: ;"></div>
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: %;"></div>
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: %;"></div>
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: %;"></div>
+                                            <div class="allphotosscrollpagephoto1" style="display: flex; position: relative; height: 47%; width: 47%; border: 2px solid white; border-radius: 1vw; left: %; top: %;"></div>
+                                        </div>
+
+                                    </div>
+
+                                <!-- End of Photos Screen -->
+
+                                <!-- End of Homepage Screen -->
+
+
+                                    <div class="screen" id="chat" style="display: none;">Direct Messages!</div>
+                                    <div class="screen" id="vc" style="display: none;">Voice Chat!</div>
+                                    <div class="screen" id="cog" style="display: none;">Settings Menu!</div>
+                                    <div class="screen" id="ai" style="display: none;">Ask Otto!</div>
+
+                                
+                
+                                    <script>
+                                        function showScreen(screenId) {
+                                            const screens = document.querySelectorAll('.screen');
+                                            screens.forEach(screen => screen.style.display = 'none');
+                                            document.getElementById(screenId).style.display = 'block';
+                                        }
+                                    </script>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                <!-- End of Quick Otto v1 -->
+                    <!-- Quick Otto Notes -->
+                    <!--
+                                          -->
+
+
+
+
+                <br>
+
+
+
+
+
+
+                <!-- Video Call Popup Screen -->
+                    <div class="videocallpopupscreen">
+                        <div class="videocallpopupscreen-background">
+                            <div> <!-- Webcam Script -->
+                                <video id="video" autoplay playsinline></video>
+                                <style>
+                            
+                                    #video {
+
+                                        display: flex;
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        border: none;
+                            
+                                    }
+                            
+                                </style>
+                            
+                            
+                                <script>
+                                    const video = document.getElementById('video');
+                            
+                                    //Ask for access to the webcam
+                                    navigator.mediaDevices.getUserMedia({ video: true })
+                                    .then(stream => {
+                                        video.srcObject = stream;
+                                    })
+                                    .catch(err => {
+                                        alert('Make sure to enable webcam!');
+                                        console.error(err);
+                                    });
+                            
+                                </script>
+                            
+                            </div>
+                        </div>
+                        <button class="videocallpopupscreen-xbutton">x</button>
+                        <button class="videocallpopupscreen-minbutton">_</button>
+                        <button class="videocallpopupscreen-answercallbutton">answer</button>
+                        <button class="videocallpopupscreen-endcallbutton">end</button>
+
+                        <div class="videocallmessagebox">
+                            <div style="background: rgba(255, 255, 255, 0.853); height: 3.5vh; width: 10vw; top: 89%; display: flex; position: absolute; border-radius: 1.5vw;">
+                                <button class="videocallmessagebox-fileuploadimg">
+                                    <img src="images/fileuploadimg.png" alt="Ottofileupload">
+                                </button>
+                                <!-- <form action="" method="POST"> -->
+                                    <input type="text" placeholder="Message..." wrap="" class="videocallmessagebox-messagebox">
+                                <!-- </form> -->
+                                    <button class="videocallmessagebox-vmimg">
+                                        <img src="images/vmimg.png" alt="Ottofileupload">
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End of Video Call Popup Screen -->
+
+                <br>
+
+                <!-- Direct Message Popup Screen -->
+
+                    <div class="directmessagepopupscreenbackground">
+                        <div class="directmessagepopupscreenlistbackground">
+                            <div class="directmessagelistbox">Test</div>
+                            <div class="directmessagelistbox">Test test test test test test test</div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                            <div class="directmessagelistbox"></div>
+                        </div>
+
+                        <div class="directmessagepopupscreenconversation">
+                            <button class="directmessageplussign">+</button>
+                            <!--
+                            <form action="" method="POST"> -->
+                                <input type="text" placeholder="Message..." wrap="" class="directmessagereplybox">
+                                <!--
+                            </form> -->
+                        </div>
+
+                    </div>
+
+                <!-- End of Direct Message Popup Scrren -->
+
+                <br>
+
+                <!-- Login Interface -->
+                <div class="logininterfaceheader"><strong>Login Interface</strong></div>
+                <div class="logininterfacebackground">
+
+                    <div class="logininterfacepanel">
+                        <div class="logininterfaceloginform">
+
+                            <form action="login.php" method="POST">
+                                <div style="text-align: center; padding-top: 3%;">360 noscope silent shot</div>
+                                    <div style="justify-content: center; text-align: center; background: none; padding-top: 2%;">
+                                        <input type="text" name="username" placeholder="username" required style="background: none; text-align: center;" />
+                                        <input type="password" name="password" placeholder="password" required style="background: none; text-align: center;" />
+                                        <button type="submit" style="background: none; text-align: center; color: rgb(0, 255, 0); border: none; cursor: pointer; padding-top: 2%;">killcam</button>
+                                    </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Login Interface -->
+
+                <br>
+
+                <!-- Admin Panel Interface -->
+                <div class="braininterfaceheader"><strong>Command Center</strong></div>
+                <div class="braininterfacebackground">
+                    <div class="adminpanelinterfacequickcommands">
+                        <div style="display: flex; position: absolute; top: 2.5%; color: white; font-size: 1.1em; cursor: pointer;">Quick Commands</div>
+                        <div style="display: flex; position: absolute; top: 10%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Gaming Flow </div>
+                        <div style="display: flex; position: absolute; top: 14.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Finance Flow </div>
+                        <div style="display: flex; position: absolute; top: 19.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Engineering Flow </div>
+                        <div style="display: flex; position: absolute; top: 24.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Movie Flow </div>
+
+                        <div style="display: flex; position: absolute; top: 32%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Home </div>
+                        <div style="display: flex; position: absolute; top: 36.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);">  </div>
+                        <div style="display: flex; position: absolute; top: 41.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Access Remote Device </div>
+                        <div style="display: flex; position: absolute; top: 46.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Jam All Transmissions </div>
+                        <div style="display: flex; position: absolute; top: 51%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Facial Recog Blocker </div>
+                        <div style="display: flex; position: absolute; top: 55.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Record All Audio/Vid </div>
+                        <div style="display: flex; position: absolute; top: 60.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Otto Suit Pickup </div>
+                        <div style="display: flex; position: absolute; top: 65.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Distress Signal </div>
+                        <div style="display: flex; position: absolute; top: 70%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> GPS Map Location </div>
+                        <div style="display: flex; position: absolute; top: 74.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Full Lockdown </div>
+                        <div style="display: flex; position: absolute; top: 79.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Track Transmission </div>
+                        <div style="display: flex; position: absolute; top: 84.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Sentry Mode </div>
+                        <div style="display: flex; position: absolute; top: 89%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Backup All Data </div>
+                        <div style="display: flex; position: absolute; top: 93.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Party Mode </div>
+                        <div style="display: flex; position: absolute; top: 98.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Order Food </div>
+                        <div style="display: flex; position: absolute; top: 103.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Menu </div>
+                        <div style="display: flex; position: absolute; top: 108.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Clean </div>
+                        <div style="display: flex; position: absolute; top: 113%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Live Translation </div>
+                        <div style="display: flex; position: absolute; top: 117.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Engage Lazer Trip </div>
+
+                    </div>
+                    <div class="adminpanelinterfacestatuscenter">
+                        <div class="adminpanelinterfacestatuscentertext">Status: &nbsp;<div style="color: skyblue;">Perfect!</div></div></div>
+                        <div class="adminpanelinterfacestatuscenterstatusdot"></div>
+                        <div style="display: flex; position: absolute; top: 10%; left: 30%; color: white; font-size: 1.1em; width: 40%;">Otto Robot: <div style="color: skyblue; border: solid white 2px; margin-left: 30%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 15%; left: 30%; color: white; font-size: 1.1em; width: 40%;">Otto AI: <div style="color: skyblue;  border: solid white 2px; margin-left: 38.7%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 20%; left: 30%; color: white; font-size: 1.1em; width: 40%;">Computer: <div style="color: skyblue;  border: solid white 2px; margin-left: 32.9%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 25%; left: 30%; color: white; font-size: 1.1em; width: 40%;">Overwatch: <div style="color: skyblue;  border: solid white 2px; margin-left: 30.5%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 30%; left: 30%; color: white; font-size: 1.1em; width: 40%">Drone: <div style="color: skyblue;  border: solid white 2px; margin-left: 41.9%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 35%; left: 30%; color: white; font-size: 1.1em; width: 40%">BCI: <div style="color: skyblue;  border: solid white 2px; margin-left: 46.8%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 40%; left: 30%; color: white; font-size: 1.1em; width: 40%">Biomed Scanner: <div style="color: skyblue;  border: solid white 2px; margin-left: 17.3%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 45%; left: 30%; color: white; font-size: 1.1em; width: 40%">Finance System: <div style="color: skyblue;  border: solid white 2px; margin-left: 18.7%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 50%; left: 30%; color: white; font-size: 1.1em; width: 40%">Farm: <div style="color: skyblue;  border: solid white 2px; margin-left: 44%; cursor: pointer;">Perfect!</div></div>
+                        <div style="display: flex; position: absolute; top: 55%; left: 30%; color: white; font-size: 1.1em; width: 40%">Cars: <div style="color: skyblue;  border: solid white 2px; margin-left: 45.7%; cursor: pointer;">Perfect!</div></div>
+                    </div>
+                </div>
+                <!-- End of Admin Panel Interface -->
+
+                <br>
+
+                <!-- Downloading Popup -->
+                    <div class="downloadingpopupheader"><strong>Downloading Popup</strong></div>
+                    <div class="downloadingpopupbackground">
+                        <div class="downloadingpopupbox">
+                            <div class="downloadingpopupboxheader typinganimation">
+                                <div> Uploading... </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- End of Downloading Popup -->
+
+                <br>
+
+                <!-- Robot Camera Overlay -->
+
+                    <div class="robotcameratrackingoverlayheader"><strong>Robot Camera Overlay</strong></div>
+                    <div class="robotcameratrackingoverlaybackground">
+                        <div class="robotcameratrackingoverlaycenterbrackets"><pre>[  ]</pre></div>
+                        <div class="robotcameratrackingdistancetoobject"><p>14m</p></div>
+                        <div class="robotcameratrackingnozzlestatus"><p>Wide Light <br> Spray</p></div>
+                        <div class="robotcameratrackingobjectstatus"><p>Holding</p></div>
+                        
+
+                        <div class="robotcameratrackingoverlayleftdataboxes" style="top: 0%; left: 0%;"></div>
+                        <div class="robotcameratrackingoverlayleftdataboxes" style="top: 15.8%; left: 0%;"></div>
+                        <div class="robotcameratrackingoverlayleftdataboxes" style="top: 31.6%; left: 0%;"></div>
+
+                        <div class="robotcameratrackingobjectivestatus"><p>OBJECTIVE: <br> Clean</p></div>
+                        <div class="robotcameratrackingH20status"><p>H<sub>2</sub>0 STATUS: <br> 27 psi</p></div>
+                        <div class="robotcameratracking02status"><p>0<sub>2</sub> STATUS: <br> 70 psi</p></div>
+
+                        <div class="robotcameratrackingoverlayrightdataboxes" style="right: 0%;"></div>
+                        <div class="robotcameratrackingoverlayrightdataboxes" style="top: 15.8%; right: 0%;"></div>
+                        <div class="robotcameratrackingoverlayrightdataboxes" style="top: 31.6%; right: 0%;"></div>
+
+                        <div class="robotcameratrackingnextobjective"><p>:NEXT OBJECTIVE <br>The Farm</p></div>
+                        <div class="robotcameratrackingbatterylife"><p>:BATTERY LIFE <br> 97.8% </p></div>
+                        <div class="robotcameratrackingoillife"><p>:OIL LIFE <br> 95.7% </p></div>
+
+                        <div class="robotcameratrackingoverlaybottomrightdatabox" style="top: 84%; right: 0%;"></div>
+                        <div class="robotcameratrackingoverlaybottomleftdatabox" style="top: 84%; left: 0%;"></div>
+                            
+                    </div>
+                <!-- End of Robot Camera Overlay -->
+
+                <br>
+
+                <!-- Drone Cam -->
+                <div class="dronecamheader"><strong>Drone Cam</strong></div>
+                <div class="dronecambackground">
+
+                    <div class="dronecamflightinfo">
+                        <div class="dronecamflightinfoheading"> Heading: NE 77&deg;</div>
+                        <div class="dronecamflightinfonextcoordinates"> Next: 46&deg; 12' 15.8076" N -- 6&deg; 8' 35.3688" E</div>
+                        <div class="dronecamflightinfoobjectivenow"> Objective: Scanning Animals </div>
+                        <div class="dronecamflightinfoobjectivenext"> Next Objective: Perimeter Check </div>
+                        <div class="dronecamflightinfooperationstatus"> Status: Thermal Scanning </div>
+                        <div class="droneflightinfofullrefuel">Refuel: 97%</div>
+                        <div class="droneflightinfozoom">Zoom: 100%</div>
+                        <div class="droneflightinfofullreload">Reload: 95%</div>
+                    </div>
+
+                    <div class="droneflightlevelgauge">
+                        <div class="droneflightlevelgaugeobject">
+                            <div class="droneflightheightlevelline1"></div>
+                            <div class="droneflightheightlevelline2"></div>
+                            <div class="droneflightheightlevelline3"></div>
+                            <div class="droneflightheightlevelline4"></div>
+                            <div class="droneflightheightlevelline5"></div>
+                            <div class="droneflightheightlevelline6"></div>
+                            <div class="droneflightheightlevelline7"></div>
+                            <div class="droneflightheightlevelline8"></div>
+                            <div class="droneflightheightlevelline9"></div>
+                            <div class="droneflightheightlevelline10"></div>
+                        </div>
+
+                        <div class="droneflightleveltext">
+                            <div class="droneflightlegend"></div>
+                            <div class="droneflightlevelmaxalt">5000</div>
+                            <div class="droneflightlevelcloseststructure">275</div>
+                            <div class="droneflightlevelground">0</div>
+                        </div>
+                    </div>
+
+                    <div class="dronexaxisflightlevelgauge">
+                        <div class="dronexaxisflightlevelgaugeobject">
+                            <div class="dronexaxisflightlevelgauge180degrighttext">180&deg;</div>
+                            <div class="dronexaxisflightlevelgaugetruelevel"></div>
+                            <div class="dronexaxisflightlevelgauge0deg">0&deg;</div>
+                            <div class="dronexaxisflightlevelgauge180deglefttext">180&deg;</div>
+                            <div class="dronexaxisflightlevelgaugetruelevel180degleft"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel45degleft"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel90degleft"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel135degleft"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel45degright"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel90degright"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel135degright"></div>
+                            <div class="dronexaxisflightlevelgaugetruelevel180degright"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="droneflightspeedgauge">
+                        <div class="droneflightspeedgaugeobject1"></div>
+                        <div class="droneflightspeedgaugeobject2"></div>
+                        <div class="droneflightspeedgaugeobject3"></div>
+                        <div class="droneflightspeedgaugeobject4"></div>
+                        <div class="droneflightspeedgaugeobject5"></div>
+                        <div class="droneflightspeedgaugeobject6"></div>
+                        <div class="droneflightspeedgaugeobject7"></div>
+                        <div class="droneflightspeedgaugeobject8"></div>
+                        <div class="droneflightspeedgaugeobject9"></div>
+                        <div class="droneflightspeedgaugeobject10"></div>
+
+                        <div class="droneflightspeedgaugetext">
+                            <div class="droneflightspeedgaugemaxmph">300</div>
+                            <div class="droneflightspeedgaugecruisingspeed">100</div>
+                            <div class="droneflightspeedminmph">0</div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Drone Cam -->
+
+                <br>
+
+                <!-- Facial Recognition Overlay -->
+                    <div class="facialrecognitionheader"><strong>Facial Recognition</strong></div>
+                    <div class="robotcamerafacialrecognitionbackground">
+                        <div class="">Facial Recognition</div>
+                        <div class="scanningfaceboxleft">
+                            <p style="display: flex; position: relative; color: white; font-size: .65em; justify-content: center; text-align: center; top: -5%;">Name</p>
+                        </div>
+                        <div class="linescanningtoscannedleft1"></div>
+                        <div class="linescanningtoscannedleft2"></div>
+                        <div class="scannedfacebackgroundreportbackgroundleft">
+                            <div class="scannedfacebackgroundreportleft">
+                                <p style="display: flex; position: relative; color: white; font-size: .7em; justify-content: center; top: 7%;">Name: Example</p>
+                                <p style="display: flex; position: relative; color: white; font-size: .6em; justify-content: center; top: 0%;">Location: Example</p>
+                                <div style="display: flex; position: relative; border: 2px solid white; height: 8vh; width: 6vw; justify-content: center; top: -2%; right: -7%;"></div>
+                                <br>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -7%; right: -7%;">
+                                    Height: 5'10" <br>
+                                    Weight: 200lbs <br>
+                                    Skin: White <br>
+                                    Hair: Brown <br>
+                                    Eyes: Brown <br>
+                                </div>
+                                <br>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -29.5%; right: -55%;">
+                                    Accociates: <br>
+                                    Father <br>
+                                    Mother <br>
+                                    Brother <br>
+                                    Sister <br>
+                                </div>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -25%; right: -3%; width: 100%; justify-content: left; text-align: left;">
+                                    Additional Info: <br>
+                                    test test test test test test test test test test test test
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="">Facial Recognition</div>
+                        <div class="scanningfaceboxright">
+                            <p style="display: flex; position: relative; color: white; font-size: .65em; justify-content: center; text-align: center; top: -5%;">Name</p>
+                        </div>
+                        <div class="linescanningtoscannedright1"></div>
+                        <div class="linescanningtoscannedright2"></div>
+                        <div class="scannedfacebackgroundreportbackgroundright">
+                            <div class="scannedfacebackgroundreportright">
+                                <p style="display: flex; position: relative; color: white; font-size: .7em; justify-content: center; top: 7%;">Name: Example</p>
+                                <p style="display: flex; position: relative; color: white; font-size: .6em; justify-content: center; top: 0%;">Location: Example</p>
+                                <div style="display: flex; position: relative; border: 2px solid white; height: 8vh; width: 6vw; justify-content: center; top: -1%; right: -7%;"></div>
+                                <br>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -6%; right: -7%;">
+                                    Height: 5'10" <br>
+                                    Weight: 200lbs <br>
+                                    Skin: White <br>
+                                    Hair: Brown <br>
+                                    Eyes: Brown <br>
+                                </div>
+                                <br>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -28.5%; right: -55%;">
+                                    Accociates: <br>
+                                    Father <br>
+                                    Mother <br>
+                                    Brother <br>
+                                    Sister <br>
+                                </div>
+                                <div style="display: flex; position: relative; color: white; font-size: .5em; top: -25%; right: -3%; width: 100%; justify-content: left; text-align: left;">
+                                    Additional Info: <br>
+                                    test test test test test test test test test test test test
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End of Facial Recognition Overlay -->
+            
+                <br>
+
+                <!-- GPS Interface --> <!-- Btw, Google Maps is highkey cracked. They've every code snippet you can think of -->
+                    <div class="gpsinterfaceheader"><strong>GPS Interface</strong></div>
+                    <div class="gpsinterfacebackground">
+                        <div>
+
+                            <!-- Replace 'YOUR_API_KEY' with your actual Google Maps API key -->
+                             <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+                             <div class="gpsinterfacemap"></div>
+
+                             <script>
+
+                                let map, marker;
+
+                                function initMap() {
+                                    //Default center before GPS is retrieved
+                                    const defaultPosition = { lat: 0, lng: 0 };
+
+                                    map = new google.maps.Map(document.getElementById("map"), 
+                                {zoom: 15, 
+                                 center: defaultPosition, });
+
+                                 // Watch GPS position
+                                 if (navigator.geolocation) {
+                                    navigator.geolocation.watchPosition(
+                                        (position) => {
+                                            const pos = {
+                                            lat: position.coords.latitude,
+                                            lng: position.coords.longitude,
+                                        };
+
+                                    marker.setPosition(pos);
+                                    map.setCenter(pos);
+                                    },
+                                    (error) => {
+                                        alert("Error getting GPS location: " + error.message );
+                                    },
+                                    { enabledHighAccuracy: true }
+                                );
+                            } else {
+                                alert("Geolocation is not supported by this browser.");
+                            }  
+                        }
+                        
+                             // Initialize the map once the page loads
+                             window.onload = initMap;
+
+                            </script>
+                            </div>
+
+                            <div class="gpsinterfaceping1">
+                                <div class="gpsinterfaceping2">
+                                    <div class="gpsinterfaceping3"></div>
+                                </div>
+                            </div>
+                            <div class="gpsinterfaceinfobox">
+                                <div>
+                                    Name <br>
+                                    Location <br>
+                                    <br>
+                                    Last Location: <br>
+                                    <br>
+                                    Associates: <br>
+                                    <br>
+                                    <br>
+                                    Additional Info:
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- End of GPS Interface -->
+
+                <br>
+
+                <!-- Splitscreen Overwatch Screen - Almost done -->
+                    <div class="splitscreenoverwatchheader"><strong>Overwatch 1</strong></div>
+                    <div class="splitscreenoverwatchscreenbackground">
+
+                        <div class="splitscreenoverwatchcamera1">
+                            <div style="color: white; font-family: monospace;">Camera 1: Front Door</div>
+                            <button class="screen" style="height: 3vh; width: 1.5vw; border-radius: 100vw;" onclick="showScreen('screen1switch2')">></button>
+
+                            <div class="screen" id="screen1switch2" style="display: none; background-color: white; height: 100%; width: 100%;">
+
+                                <div style="color: black;">text</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="splitscreenoverwatchcamera2">
+                            <div style="color: white; font-family: monospace;">Camera 2: Back Door</div>
+                        </div>
+                        <div class="splitscreenoverwatchcamera3">
+                            <div style="color: white; font-family: monospace;">Camera 3: Overwatch</div>
+
+                        </div>
+                        <div class="splitscreenoverwatchcamera4">
+                            <div style="color: white; font-family: monospace;">Camera 4: Patio</div>
+
+                        </div>
+
+                        <!-- Put the Button inside of the Class Div with the Script working.
+                            <button class="" onclick="showScreen('')"></button>
+                            <button class="" onclick="showScreen('')"></button>
+                            <button class="" onclick="showScreen('')"></button>
+                            <button class="" onclick="showScreen('')"></button>
+                            <button class="" onclick="showScreen('')"></button>
+
+                            <div class="screen" id="screen2switch2" style="display: none;"></div>
+                            <div class="screen" id="screen3switch2" style="display: none;"></div>
+                            <div class="screen" id="screen4switch2" style="display: none;"></div>
+        
+                        -->
+
+                            <script>
+                                function showScreen(screenId) {
+                                    const screens = document.querySelectorAll('.screen');
+                                    screens.forEach(screen => screen.style.display = 'none');
+                                    document.getElementById(screenId).style.display = 'block';
+                                }
+                            </script>
+
+                    </div>
+
+                                    
+                    
+                <!--- End of Splitscreen Overwatch Screen -->
+
+                <br>
+
+                <!-- Full Background Report -->
+                    <div class="backgroundreportheader"><strong>Background Report</strong></div>
+                    <div class="backgroundreportbackground">
+                        <div class="fullbackgroundreportquickinfo">
+                            <div class="fullbackgroundreportquickinfonameage">
+                                Name <br>
+                                Age
+                            </div>
+                            <div class="fullbackgroundreportquickinfophoto"></div>
+                        </div>
+                        <div class="fullbackgroundreportquickinfoheight">Height</div>
+                        <div class="fullbackgroundreportquickinfoweight">Weight</div>
+                        <div class="fullbackgroundreportquickinfoskincolor">Skin Color</div>
+                        <div class="fullbackgroundreportquickinfohaircolor">Hair Color</div>
+                        <div class="fullbackgroundreportquickinfoeyecolor">Eye Color</div>
+                        <div class="fullbackgroundreportadditions">Additions</div>
+
+                        <div class="fullbackgroundreportquickinfolastupdated">last updated: Nov 27th 2023</div>
+
+
+                        <div class="fullbackgroundreportfullnamebox">Full Name</div>
+                        <div class="fullbackgroundreportbirthday">Birthday</div>
+                        <div class="fullbackgroundreportfulladdressbox">Full Address</div>
+                        <div class="fullbackgroundreportknownassociates">Known Associates</div>
+                        <div class="fullbackgroundreportlocationsofinterest">Locations of Interest</div>
+                        <div class="fullbackgroundreportassetsonhand">Assets on Hand</div>
+
+                    </div>
+                <!-- End of Full Background Report -->
+                
+                <br>
+
+                <!-- Voice Convo Popup -->
+                    <div class="voiceconvopopupheader"><strong>Voice Convo</strong></div>
+                    <div class="voiceconvopopupbackground">
+
+                        <div class="voiceconvobox1">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+
+                        <div class="voiceconvobox2">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+                        <div class="voiceconvobox3">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+                        <div class="voiceconvocontrolsbox">
+                            <div class="voiceconvocontrolsboxbutton1">
+                                <div class="voiceconvocontrolsboxbutton1popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                            <div class="voiceconvocontrolsboxbutton2">
+                                <div class="voiceconvocontrolsboxbutton2popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                            <div class="voiceconvocontrolsboxbutton3">
+                                <div class="voiceconvocontrolsboxbutton3popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                            <div class="voiceconvocontrolsboxbutton4">
+                                <div class="voiceconvocontrolsboxbutton4popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                            <div class="voiceconvocontrolsboxbutton5">
+                                <div class="voiceconvocontrolsboxbutton5popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                            <div class="voiceconvocontrolsboxbutton6">
+                                <div class="voiceconvocontrolsboxbutton6popup">
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 37.5%; left: 37%; border-radius: 100vw; cursor: pointer;">menu</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 7.5%; border-radius: 100vw; cursor: pointer;">tran</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 2.5%; left: 37%; border-radius: 100vw; cursor: pointer;">mute</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 20%; left: 67%; border-radius: 100vw; cursor: pointer;">merge</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 67%; border-radius: 100vw; cursor: pointer;">link</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 71%; left: 37%; border-radius: 100vw; cursor: pointer;">spot</div>
+                                    <div style="display: flex; position: absolute; height: 3.5vh; width: 1.75vw; border: 2px solid black; top: 55%; left: 7.5%; border-radius: 100vw; cursor: pointer;">rec</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="voiceconvobox4">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+                        <div class="voiceconvobox5">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+                        <div class="voiceconvobox6">
+                            <div class="voiceconvorecordinglight"></div>
+                            <div class="voiceconvooriginflag" style="display: flex; position: absolute; height: 1.57vh; width: 1.7vw; border: 1.25px solid white; top: 70%; left: 2.5%;"></div>
+                            <div class="voiceconvoopenmicstatus" style="display: flex; position: absolute; left: 2.5%; top: 7%; color: white; font-size: .9em;">Name</div>
+                            <div class="voiceconvoname" style="display: flex; position: absolute; font-size: .9em; top: 70%; right: 2.5%; color: white;">mic</div>
+                            <div class="voiceconvooverallstatus" style="display: flex; position: absolute; height: 2vh; width: 1vw; border-radius: 100vw; background-color: rgb(0, 255, 0); top: 35%; left: 2.5%;"></div>
+                        </div>
+                    </div>
+                <!-- End of Voice Convo Popup -->
+
+                <br>
+
+                <!-- Medical Interface -->
+                    <div class="medicalinterfaceheader"><strong>Medical Interface</strong></div>
+                    <div class="medicalinterfacebackground">
+                        <div class="medicalinterfacepatientinfobox">
+                            <div class="medicalinterfacepatientinfonameage">Name and Age</div>
+                            <br>
+                            <div class="medicalinterfacepatientinfooperation">Operation:</div>
+                                <br>
+                                <div class="medicalinterfacepatientinfooperationdetails">
+                                    Test test test test test test <br>
+                                    test test test tst teststest
+                                </div>
+                        
+                            <div class="medicalinterfacepatientquickbioscan">
+                                <div> Details: <br>
+
+                                    Bioscan details
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medicalinterfacevitals" style="display: flex; position: absolute; border: 3px solid black; height: 94.5%; width: 27%; top: 2.5%; right: 1.25%;">
+                            <div style="display: flex; position: absolute; height: 25%; width: 100%; top: 0%; justify-content: center; text-align: center; padding-top: .5vh;">
+                                Live Vitals <br>
+                                <div style="display: flex; position: absolute; width: 93%; top: 20%; justify-content: left; text-align: left; border: 3px solid black; padding: .5vh;">
+                                    Heartrate: 70 BPM <br>
+                                    Brain Activity: Live <br>
+                                    Blood Pressure: 120/79 <br>
+                                    Oxygen Level: 99% <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End of Medical Interface -->
+
+                <br>
+
+                <!-- Brain Interface -->
+                    <div class="braininterfaceheader"><strong>Brain Interface</strong></div>
+                    <div class="braininterfacebackground">
+                    </div>
+                <!-- End of Brain Interface -->
+
+                <br>
+
+                <!-- Finance Interface -->
+                    <div class="financeinterfaceheader"><strong>Finance Interface</strong></div>
+                    <div class="financeinterfacebackground">
+                        <div class="financeinterfacetransactionbackground">
+                            <div class="financeinterfacetransactionheader">
+                                <div style="padding-right: 17%; padding-left: 10%;">Transaction</div>
+                                <div style="padding-right: 20%;">Date</div>
+                                <div style="padding-right: 20%;">Coin</div>
+                                <div style="padding-right: 0%">Currency</div>
+                            </div>
+                            <div class="financeinterfacetransaction1"> <!-- Finance Interface Transaction 1 -->
+                                <div class="financeinterfacetransaction1transactionid">1234567890123456</div>
+                                <div class="financeinterfacetransaction1transactiondate">11/04/2009</div>
+                                <div class="financeinterfacetransaction1transactioncoin">1.000 BTC</div>
+                                <div class="financeinterfacetransaction1transactioncurrency">$100,000,000</div>
+                            </div>
+
+                            <div class="financeinterfacetransaction1"> <!-- Finance Interface Transaction 1 -->
+                                <div class="financeinterfacetransaction1transactionid">1234567890123456</div>
+                                <div class="financeinterfacetransaction1transactiondate">11/04/2009</div>
+                                <div class="financeinterfacetransaction1transactioncoin">1.000 BTC</div>
+                                <div class="financeinterfacetransaction1transactioncurrency">$100,000,000</div>
+                            </div>
+
+                            <div class="financeinterfacetransaction1"> <!-- etc -->
+                                <div class="financeinterfacetransaction1transactionid">1234567890123456</div>
+                                <div class="financeinterfacetransaction1transactiondate">11/04/2009</div>
+                                <div class="financeinterfacetransaction1transactioncoin">1.000 BTC</div>
+                                <div class="financeinterfacetransaction1transactioncurrency">$100,000,000</div>
+                            </div>
+
+                            <div class="financeinterfacetransaction1">
+                                <div class="financeinterfacetransaction1transactionid">1234567890123456</div>
+                                <div class="financeinterfacetransaction1transactiondate">11/04/2009</div>
+                                <div class="financeinterfacetransaction1transactioncoin">1.000 BTC</div>
+                                <div class="financeinterfacetransaction1transactioncurrency">$100,000,000</div>
+                            </div>
+
+                        </div>
+
+                        <div class="financeinterfacetransactionpagetransaction1">
+
+                            <div class="financeinterfacetransactionpagetransaction1photo"></div>
+                            <div class="financeinterfacetransactionpagetransaction1backbutton">Back</div>
+                            <div class="financeinterfacetransactionpagetransaction1transactionID">
+
+                                <div>Hash ID</div>
+                                <div class="financeinterfacetransactionpagetransaction1transactionIDhash">1234567890123456</div>
+
+                            </div>
+                            <div class="financeinterfacetransactionpagetransaction1toandfromwalletaddress">
+
+                                <div class="financeinterfacetransactionpagetransaction1towalletaddress">To: Wallet ID</div>
+                                <div class="financeinterfacetransactionpagetransaction1fromwalletaddress">From: Wallet ID</div>
+
+                            </div>
+                            <div>
+
+                                <div class="financeinterfacetransactionpagetransaction1dateandtime">
+                                    <div>10 May 2025 5:03:37 CST-5</div>
+                                </div>
+
+                                <div class="financeinterfacetransactionpagetransaction1amountandfee">
+                                    <div>
+                                        <div>Amount: <strong>1,000.00 BTC</strong>   $100,000,000.00</div> <br>
+                                        <div style="margin-top: -1.5vh;">Fee: <strong>700 SATS</strong> $0.75 USD</div>
+
+                                    </div>
+                                </div>
+
+                                <div class="financeinterfacetransactionpagetransaction1advanceddetails">
+
+                                    <div>Advanced Details</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                <!-- End of Finance Interface -->
+
+                <br>
+
+                <!-- Language Translator Interface -->
+                <div class="braininterfaceheader"><strong>Universal Translator Interface</strong></div>
+                <div class="braininterfacebackground">
+                </div>
+                <!-- End of Language Translator Interface -->
+
+                <br>
+
+                <!-- Bioscan Interface -->
+                <div class="bioscaninterfaceheader"><strong>Bioscan Interface</strong></div>
+                <div class="bioscaninterfacebackground">
+                    <div class="bioscannermodule" style="display: flex; position: absolute; height: 85%; width: 70%; top: 7.5%; left: 13.5%; border: 2px solid white;">
+                        <div class="biometricscanline"></div>
+                    </div>
+                </div>
+                <!-- End of Bioscan Interface -->
+
+                <br>
+
+                <!-- UV Cleaning Interface -->
+                <div class="uvcleaninginterfaceheader"><strong> UV Cleaning Interface </strong></div>
+                <div class="uvcleaninginterfacebackground" style="align-items: center;">
+                    <div class="bioscannermodule" style="display: flex; position: absolute; height: 85%; width: 90%; top: 7.5%; left: 5%; border: 2px solid rgb(0, 0, 0);">
+                        <div class="uvcleaningscanline"></div>
+                    </div>
+                </div>
+                <!-- End of UV Cleaning Interface -->
+
+                <br>
+
+                <!-- Idea Notepad -->
+                <div class="notepadinterfaceheader"><strong>Idea Notepad</strong></div>
+                <div class="notepadinterfacebackground">
+                    <div class="notepadidealist">
+                        <div style="color: white;"> Weapon Design Interface </div>
+                        <div style="color: white;"> Credit Card Design Interface </div>
+                        <div style="color: white;"> Ghost Tech Suit </div>
+                        <div style="color: white;"> Leads Interface </div>
+                        <div style="color: white;"> Cleaning Algorithm </div>
+                        <div style="color: white;"> 3D Model Ideas </div>
+                        <div style="color: white;"> Hidden Gun Idea </div>
+                        <div style="color: white;"> 360 Mini Cam </div>
+                        <div style="color: white;"> Custom VR Scuf </div>
+                        <div style="color: white;"> Ghost Tech Suit </div>
+                        <div style="color: white;"> Custom Car Builder </div>
+                        <div style="color: white;"> Ice Bullet Gun </div>
+                        <div style="color: white;"> Body Armor </div>
+                        <div style="color: white;"> ID Card Security </div>
+                        <div style="color: white;"> Biometric Scanner Recognition </div>
+                        <div style="color: white;"> Flying Squirell Suit </div>
+                        <div style="color: white;"> Wave Jammer </div>
+                        <div style="color: white;"> Faraday Box </div>
+                        <div style="color: white;"> <sub>0</sub>2 Creator </div>
+                        <div style="color: white;"> H<sub>2</sub>0 Creator </div>
+                        <div style="color: white;"> Facial Recognition Jammer </div>
+                        <div style="color: white;"> Weather Station </div>
+
+                    </div>
+
+                    <div class="notepadtodolist">
+
+                        <div style="color: white;"> To Do List </div>
+                        <br>
+                        <div style="color: white;"> GPS Tracking: Done </div>
+                        <br>
+                        <div style="color: white;"> Learn  Javascript </div>
+                        <br>
+                        <div style="color: white;"> Facial/Fingerprint Recognition Moving Facebox </div>
+                        <br>
+                        <div style="color: white;"> Mini Otto UI/UX </div>
+                        <br>
+                        <div style="color: white;"> Login Box Submit Form / Next Page </div>
+                        <br>
+                        <div style="color: white;"> Project Unicorn  </div>
+
+
+
+                    </div>
+
+                </div>
+                <!-- End of Idea Notepad -->
+
+                <br>
+
+                <!-- Console Box -->
+                    <div id="console" style="padding-left: 1vw; padding-top: 3vh; bottom: -110%; display: flex; position: relative;">
+                        <script>
+                            function logToConsoleBox(message) {
+                            const consoleBox = document.getElementById('console');
+                            consoleBox.innerHTML += message + '<br>';
+                            consoleBox.scrollTop = consoleBox.scrollHeight;
+                        }
+
+                            //Example usage
+                            logToConsoleBox('1. -Hello World! This is Otto! How is everything? <br>');
+                            logToConsoleBox('2. -This is a console log message!<br>') 
+                            logToConsoleBox('3. -Intervention MW2!<br>')
+                        </script>
+                    </div>
+                <!-- End of Console Box -->
+
+                <!-- Footer -->
+                    <p class="footer" style="padding-top: 20vh;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+
+</body>
+</html>

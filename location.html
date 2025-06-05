@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div id="homepageheader">
+        <nav class="nav-bar">
+            <span class="nav-button" onclick="document.getElementById('audioPlayer').play()">
+                <img style="width: 35px; height: 35px; margin: 5px;" class="nav-img" src="images/onbutton.png" alt="onbutton">
+              </span>
+              <button onclick="location.href='index.html'" class="nav-button">Otto</button>
+              <button onclick="location.href='controlpanel.html'" class="nav-button">BCI</button>
+              <button onclick="location.href='location.html'" class="nav-button">Biomed</button>
+              <button onclick="location.href='logs.html'" class="nav-button">Farming</button>
+              <button onclick="location.href='updates.html'" class="nav-button">Tech</button>
+              <button onclick="location.href='vision.html'" class="nav-button">Cars</button>
+              <button onclick="location.href='ourclass.html'" class="nav-button">Portfolio</button>
+
+            <span class="nav-button" onclick="document.getElementById('audioPlayer').play()">
+                <img style="width: 35px; height: 35px; margin: 5px;" class="nav-img" src="images/onbutton.png" alt="onbutton">
+            </span>
+
+        </nav>
+    </div>
+<hr>
+
+    <div>
+
+        <p id="paragraph1">
+            test paragraph
+        </p>
+
+        <div id="console" style="padding-left: 1vw; padding-top: 2vh; margin-top: 1vh;"> </div>
+        <script>
+            function logToConsoleBox(message) {
+            const consoleBox = document.getElementById('console');
+            consoleBox.innerHTML += message + '<br>';
+            consoleBox.scrollTop = consoleBox.scrollHeight;
+        }
+
+            //Example usage
+            logToConsoleBox('1. -Hello World! This is Otto! How is everything? <br>');
+            logToConsoleBox('2. -This is a console log message!<br>') 
+            logToConsoleBox('3. -Intervention MW2!<br>')
+        </script>
+
+    </div>
+
+    <p class="footer" style="padding-top: 20vh;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+
+</body>
+</html>

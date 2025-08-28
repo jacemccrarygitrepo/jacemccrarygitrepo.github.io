@@ -32,29 +32,94 @@
     </div>
 <hr>
 
-    <div>
+    <div id="shoptitlebox" style="">
 
-        <p id="paragraph1">
-            test paragraph
+        <p id="shoptitle" style="display: flex; position: relative; height: 22.5vh; width: 100%; background-color: black; top: 15%; border-radius: 1vh; color: rgba(165, 165, 165, 0.563);" >
+            placeholder
         </p>
-
-        <div id="console" style="padding-left: 1vw; padding-top: 2vh; margin-top: 1vh;"> </div>
-        <script>
-            function logToConsoleBox(message) {
-            const consoleBox = document.getElementById('console');
-            consoleBox.innerHTML += message + '<br>';
-            consoleBox.scrollTop = consoleBox.scrollHeight;
-        }
-
-            //Example usage
-            logToConsoleBox('1. -Hello World! This is Otto! How is everything? <br>');
-            logToConsoleBox('2. -This is a console log message!<br>') 
-            logToConsoleBox('3. -Intervention MW2!<br>')
-        </script>
+            <div id="shopnewdropvideo">
+                <video class="" id="" style="display: flex; position: absolute; height: 20%; width: 25%; left: 38.5%; top: 13.7%; cursor: crosshair; " autoplay muted playsinline looped>
+                        <source src="../Otto.v1/videos/loadupscreenintervention.mp4.mp4" type="video/mp4">
+                        Your browser doesn't support this video
+                </video>
+            </div>
+        <div>
+            <script>
+                // Set delay time in milliseconds (5000 ms = 5 seconds)
+                setTimeout(function() {
+                    const box = document.getElementById("shoptitlebox");
+                    if (box) {
+                        box.remove() = "none"; // Or use box.remove() to delete completely
+                    }
+                }, 12000);
+            </script>
+        </div>
 
     </div>
+    <div  class="storebackground" style="display: flex; position: relative; height: 200vh; width: 100%; background-color: grey; top: 20%;">
 
-    <p class="footer" style="padding-top: 20vh;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+        <div class="allstoreitems" style="">
+            <div class="storeapparel" style="">
+                <p style="display: flex; position: absolute; top: 3%; left: 3.5%; font-size: 2.5em;">Apparel</p>
+                <div style="display: flex; position: absolute; height: 3.75px; width: 15%; background-color: rgb(73, 170, 255); top: 9.15%; left: 3%; border-radius: 10vh;"></div>
+
+
+                <div class="storeitem1" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 2.5%; top: 10%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 2.5%; top: 35.75%; cursor: pointer;"></button>
+               
+                <div class="storeitem2" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 27.5%; top: 10%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 27.5%; top: 35.75%; cursor: pointer;"></button>
+                
+                <div class="storeitem3" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 52.5%; top: 10%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 52.5%; top: 35.75%; cursor: pointer;"></button>
+
+                <div class="storeitem4" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 77.25%; top: 10%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 77.25%; top: 35.75%; cursor: pointer;"></button>
+
+            </div>
+
+            <div class="storeposters">
+                <p style="display: flex; position: absolute; top: 45.55%; left: 3.5%; font-size: 2.5em;">Posters</p>
+                <div style="display: flex; position: absolute; height: 3.75px; width: 15%; background-color: rgb(73, 170, 255); top: 51.67%; left: 3%; border-radius: 10vh;"></div>
+                <div class="storeitem5" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 2.5%; top: 52.5%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 2.5%; top: 78.25%; cursor: pointer;"></button>
+
+                <div class="storeitem6" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 27.5%; top: 52.5%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 27.5%; top: 78.25%; cursor: pointer;"></button>    
+
+                <div class="storeitem7" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 52.5%; top: 52.5%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 52.5%; top: 78.25%; cursor: pointer;"></button>    
+
+                <div class="storeitem8" style="display: flex; position: absolute; height: 25%; width: 20%; background-color: white; border-radius: 1.75vh; border: 2px solid black; left: 77.25%; top: 52.5%;"></div>
+                    <button class="storeitem1clickbox" style="display: flex; position: absolute; height: 5.5%; width: 20.25%; background-color: white; border-radius: 3vh; border: 2px solid black; left: 77.25%; top: 78.25%; cursor: pointer;"></button>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="console" style="padding-left: 1vw; padding-top: 2vh; margin-top: 1vh; top: 250vh;"> </div>
+            <script>
+                function logToConsoleBox(message) {
+                const consoleBox = document.getElementById('console');
+                consoleBox.innerHTML += message + '<br>';
+                consoleBox.scrollTop = consoleBox.scrollHeight;
+            }
+
+                //Example usage
+                logToConsoleBox('1. -Hello World! This is Otto! How is everything? <br>');
+                logToConsoleBox('2. -This is a console log message!<br>') 
+                logToConsoleBox('3. -Intervention MW2!<br>')
+            </script>
+
+        </div>
+
+                <!-- Footer -->
+                    <div style="display: flex; position: static; bottom: 1%; height: 1vh; width: 99%; padding-top: 1vh;">
+                        <p class="footer" style="margin-left: 40%;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+                        <button style="display: flex; position: absolute; color: black; background: none; border: none; cursor: pointer; color : lightgrey; margin-top: -.1%; margin-left: 7%; padding-bottom: 2vh;">+1 (972) 848-1714</button>
+                        <img src="../Otto.v1/images/minecraftdiscordicon.png" alt="minecraftdiscordicon" width="39" height="32" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 15.5%; padding-bottom: 2vh; cursor: pointer;" />
+                        <img src="../Otto.v1/images/tiktokicon.png" alt="minecraftdiscordicon" width="43" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 19%; padding-bottom: 2vh; cursor: pointer;" />
+                    </div>
 
 </body>
 </html>

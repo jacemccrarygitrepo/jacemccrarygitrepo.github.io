@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esports</title>
 
-    <!-- Stylesheet and external Javascript -->
+    <!-- Stylesheet and External Javascript -->
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
 
 </head>
 <body>
                 <!-- Nav Bar -->
-                    <div id="homepageheader">
+                    <div id="homepageheader"> 
                         <nav class="nav-bar">
+                            <img src="../Otto.v1/images/codemblemsgif/NVG_Star_emblem_MW2.gif" alt="spinningmw2starlogo" width="75" style="display: flex; position: absolute; left: 5%;top: 1.75%; cursor: crosshair;" />
                             <span class="nav-button" onclick="document.getElementById('audioPlayer').play()">
                                 <img style="width: 35px; height: 35px; margin: 5px;" class="nav-img" src="images/onbutton.png" alt="onbutton">
                             </span>
@@ -35,6 +36,29 @@
                     </div>
                     <hr>
                 <!-- End of Nav Bar -->
+
+                <!-- Start of Window On-Load Video Popup -->
+
+                    <video id="introVideo" style="cursor: crosshair;" autoplay muted playsinline>
+                    <source src="../Otto.v1/videos/loadupscreenintervention.mp4.mp4" type="video/mp4">
+                    Your browser doesn't support this video
+                    </video>
+
+                    <script>
+                        const video = document.getElementById("introVideo");
+                        const content = document.getElementById("mainContent");
+
+                        function skipIntro() {
+                            video.pause();
+                            video.style.display = "none";
+                            conent.style.display = "block";
+                        }
+
+                        video.addEventListener("ended", skipIntro);
+                        video.addEventListener("click", skipIntro);
+                    </script>
+
+                <!-- End of Window On-Load Video Popup -->
 
                 <!-- Otto v1 -->
                     <div class="quickOttoflexbox" style="z-index: 1001;">
@@ -617,25 +641,32 @@
                         <div style="display: flex; position: absolute; top: 19.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Engineering Flow </div>
                         <div style="display: flex; position: absolute; top: 24.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Movie Flow </div>
 
-                        <div style="display: flex; position: absolute; top: 32%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Home </div>
-                        <div style="display: flex; position: absolute; top: 36.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);">  </div>
-                        <div style="display: flex; position: absolute; top: 41.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Access Remote Device </div>
-                        <div style="display: flex; position: absolute; top: 46.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Jam All Transmissions </div>
+                        <div style="display: flex; position: absolute; top: 32.25%; color: white; width: 100%; height: 4.5%; padding-top: 2.75%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Home </div>
+
+                        <div style="display: flex; position: absolute; top: 41.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/SHUTDOWN.bat" download> <img src="../Otto.v1/images/codemblemsgif/Emblem-Anim-counter-uav.gif" alt="tacticalnukelogo" width="25" style="display: flex; position: absolute; left: 1%; top: -7%; cursor: crosshair;" /> <button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Access Remote Device</button></a></div>
+                        <div style="display: flex; position: absolute; top: 46.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/SHUTDOWN.bat" download> <img src="../Otto.v1/images/codemblemsgif/EMP_inventory_icon_MW2.gif" alt="counteruavgif" width="25" style="display: flex; position: absolute; left: 1%; top: -7%; cursor: crosshair;" /> <button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Jam All Transmissions</button></a></div>
                         <div style="display: flex; position: absolute; top: 51%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Facial Recog Blocker </div>
                         <div style="display: flex; position: absolute; top: 55.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Record All Audio/Vid </div>
-                        <div style="display: flex; position: absolute; top: 60.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Otto Suit Pickup </div>
+                        <div style="display: flex; position: absolute; top: 60.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/SHUTDOWN.bat" download> <img src="../Otto.v1/images/codemblemsgif/Emblem-Anim-emergency-airdrop.gif" alt="tacticalnukelogo" width="25" style="display: flex; position: absolute; left: 5%; top: -7%; cursor: crosshair;" /> <button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Otto Suit Pickup</button></a></div>
                         <div style="display: flex; position: absolute; top: 65.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Distress Signal </div>
                         <div style="display: flex; position: absolute; top: 70%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> GPS Map Location </div>
-                        <div style="display: flex; position: absolute; top: 74.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Full Lockdown </div>
+                        <div style="display: flex; position: absolute; top: 74.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/SHUTDOWN.bat" download> <img src="../Otto.v1/images/codemblemsgif/Tactical_Nuke_inventory_icon_MW2.gif" alt="tacticalnukegif" width="25" style="display: flex; position: absolute; left: 5%; top: -7%; cursor: crosshair;" /> <button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Full Lockdown</button></a></div>
                         <div style="display: flex; position: absolute; top: 79.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Track Transmission </div>
-                        <div style="display: flex; position: absolute; top: 84.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Sentry Mode </div>
+                        <div style="display: flex; position: absolute; top: 84.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/" download> <img src="../Otto.v1/images/codemblemsgif/Sentry_gun_2.gif" alt="sentrymodegif" width="25" style="display: flex; position: absolute; left: 5%; top: -7%; cursor: crosshair;" /> <button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Sentry Mode</button></a></div>
                         <div style="display: flex; position: absolute; top: 89%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Backup All Data </div>
                         <div style="display: flex; position: absolute; top: 93.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Party Mode </div>
                         <div style="display: flex; position: absolute; top: 98.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Order Food </div>
                         <div style="display: flex; position: absolute; top: 103.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Menu </div>
-                        <div style="display: flex; position: absolute; top: 108.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Clean </div>
+                        <div style="display: flex; position: absolute; top: 108.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/cleanprotocol.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Clean Protocol</button></a></div>
                         <div style="display: flex; position: absolute; top: 113%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Live Translation </div>
                         <div style="display: flex; position: absolute; top: 117.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"> Engage Lazer Trip </div>
+
+                        <div style="display: flex; position: absolute; top: 123.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="../Otto.v1/batscripts/" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Operations</button></a></div>
+                        <div style="display: flex; position: absolute; top: 129.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/ghostopv1.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Ghost OP</button></a></div>
+                        <div style="display: flex; position: absolute; top: 134.25%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/operationbulwarkv1.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Op Bulwark</button></a></div>
+                        <div style="display: flex; position: absolute; top: 139%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/operationwaterfarmv1.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Op Waterfarm</button></a></div>
+                        <div style="display: flex; position: absolute; top: 143.75%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/operationrileyv1.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Op Riley</button></a></div>
+                        <div style="display: flex; position: absolute; top: 148.50%; color: white; width: 100%; height: 4%; padding-top: 1%; font-size: 1em; cursor: pointer; justify-content: center; border: 2px solid rgb(0, 255, 0);"><a href="batscripts/operationgethigh.txt" download><button style="background: none; border: none; color: white; font-size: .9em; cursor: pointer;">Op Get High</button></a></div>
 
                     </div>
                     <div class="adminpanelinterfacestatuscenter">
@@ -657,17 +688,87 @@
 
                 <br>
 
-                <!-- Downloading Popup -->
-                    <div class="downloadingpopupheader"><strong>Downloading Popup</strong></div>
-                    <div class="downloadingpopupbackground">
-                        <div class="downloadingpopupbox">
-                            <div class="downloadingpopupboxheader typinganimation">
-                                <div> Uploading... </div>
+                <!-- Profile Page Interface -->
+
+                    <div class="profilepageinterfaceheader"><strong>Profile Page Interface</strong></div>
+                    <div class="profilepageinterfacebackground">
+                        <div>
+                            <img src="../Otto.v1/images/codemblemsgif/NVG_Star_emblem_MW2.gif" alt="spinningmw2starlogo" width="75" style="display: flex; position: absolute; left: 2%; top: 1%; cursor: crosshair;" />
+                            <div style="display: flex; position: absolute; top: 2.4%; left: 13%; font-size: 1.1em; color: rgb(0, 162, 255); cursor: crosshair;"> Bulwark </div>
+                            <div style="display: flex; position: absolute; top: 5.5%; left: 13%; font-size: 1.05em; color: white;"> Recon Sniper </div>
+                            <div style="display: flex; position: absolute; top: 8%; left: 13%; font-size: .85em; color: rgb(164, 162, 162);"> ID: &nbsp; <strike>Redacted</strike> </div>
+
+                            <div style="display: flex; position: absolute; top: 3%; right: 7%;"><input type="text" placeholder="Search Info" wrap="" class="directmessagereplybox"></div>
+                            <div><img src="../Otto.v1/images/ottomessageapptransparentimg.png" alt="profilemessagetransparentimg" width="25" style="display: flex; position: absolute; right: 32%; top: 7%; cursor: pointer;" /></div>
+                            <div><img src="../Otto.v1/images/ottophoneapptransparentimg.png" alt="profilephonetransparentimg" width="25" style="display: flex; position: absolute; right: 27.75%; top: 7%; cursor: pointer;" /></div>
+                            <div><img src="../Otto.v1/images/ottosettingsapptransparentimg.png" alt="profilsettingstransparentimg" width="25.75" style="display: flex; position: absolute; right: 5.75%; top: 7%; cursor: pointer;" /></div>
+
+                            <div style="display: flex; position: absolute; top: 17%; left: 4%; font-size: 1em; color: white; border: 2px solid white;">
+                                Weapon of Choice:<br>
+                                Intervention Tac Knife M9
+                                <br>
+                                <br>
+                                Fight Style: Ace <br>
+                                Long Range Targets with a specialty in Sniper CQB. &nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                Highest in class TTK, known for Trickshotting. <br>
+                                <br>
+                                Highly Effective
+                            </div>
+                            <div style="display: flex; position: absolute; top: 40%; left: 4%; font-size: 1em; color: white; border: 2px solid white;">
+                                Secondary Style:<br>
+                                Canted Hand Cannon with Charged Shotgun
+                                <br>
+                                <br>
+                                Fight Style: All Around Support Fighter <br>
+                                Long Range, Close Gap, Collapse on immediate threat, <br>
+                                secondary objective focus and hard support follow up. <br>
+                                <br>
+                                Master Class Fighter
+                            </div>
+                            <div style="display: flex; position: absolute; top: 17%; left: 69%; font-size: 1.2em; color: white;">
+                                Classification<br>
+                            </div>
+                            <div style="display: flex; position: absolute; top: 20%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                <p>2010 &nbsp; &nbsp; <strike>Redacted</strike> &nbsp; <strike>Redacted</strike></p><br>  
+                            </div>
+                            <div style="display: flex; position: absolute; top: 27%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                2012 &nbsp; &nbsp; Delta Class &nbsp; <strike>Redacted</strike><br>  
+                            </div>
+                            <div style="display: flex; position: absolute; top: 30%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                <p>2013 &nbsp; &nbsp; <strike>Redacted</strike> &nbsp; <strike>Redacted</strike></p><br>  
+                            </div>
+                            <div style="display: flex; position: absolute; top: 37%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                2014 &nbsp; &nbsp; Support School &nbsp; Graduated<br>  
+                            </div>
+                            <div style="display: flex; position: absolute; top: 42%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                2019 &nbsp; &nbsp; Drop School &nbsp; Graduated #1 in Class <br>  
+                            </div>
+                            <div style="display: flex; position: absolute; top: 47%; left: 55%; height: 50%; width: 50%; font-size: 1em; color: white;">
+                                2023 &nbsp; &nbsp; Master Class &nbsp; Rank &nbsp; #14,000<br>
+                                _______________________________________
+                            </div>
+                            <div style="display: flex; position: absolute; top: 53%; left: 55.17%; height: 7%; width: 1.7%; border: 1px solid white;">
+
+                            </div>
+                            <div style="display: flex; position: absolute; top: 61.7%; left: 18%; height: 50%; width: 50%; font-size: 1.2em; color: white;">
+                            <p>Schooling - Recon</p><br>
+                            </div>
+                            <div style="display: flex; position: absolute; top: 67%; left: 5%; height: 5%; width: 25%; font-size: 1em; color: white; flex-direction: column 1; flex-wrap: wrap;">
+                                <p style="margin-left: 27.75%;">Engineering</p><br>
+                                <p style="margin-top: -7%">Coding - HTML, CSS, JS, PS</p>
+                                <p style="margin-top: -7%">Robotics - Basics</p>
+                                <p style="margin-top: -7%">Bio Tech/Med School - TBD</p>
+                            </div>
+                            <div style="display: flex; position: absolute; top: 80.7%; left: 5%; height: 5%; width: 25%; font-size: 1em; color: white; flex-direction: column 1; flex-wrap: wrap;">
+                                <p style="margin-left: 27.75%;">Acheivements</p><br>
+                                <p style="margin-top: -7%">Brain Computer Interface</p>
+                                <p style="margin-top: -7%">Molecular Stasis</p>
+                                <p style="margin-top: -7%">Robotics + Blueprints</p>
                             </div>
                         </div>
                     </div>
 
-                <!-- End of Downloading Popup -->
+                <!-- End of Profile Page Interface -->
 
                 <br>
 
@@ -1152,6 +1253,56 @@
 
                 <br>
 
+                <!-- Internal Video Call Interface -->
+                    <div class="internalvideocallinterfaceheader">
+                        <strong>Internal Video Call Interface</strong>
+                        <div style="display: flex; position: absolute; top: -27%; right: 9%; font-size: 1.35em; cursor: pointer;">+</div>
+                        <div style="display: flex; position: absolute; top: -70%; right: 5%; font-size: 1.35em; cursor: pointer;">_</div>
+                        <div style="display: flex; position: absolute; top: -35%; right: 1%; font-size: 1.35em; cursor: pointer;">x</div>
+                    </div>
+                    <div class="internalvideocallinterfacebackground">
+                        <div style="display: flex; position: absolute; height: 99%; width: 11%; right: 0%; border: 2px solid white;"></div>
+                    </div>
+                <!-- End of Internal Video Call Interface -->
+
+                <br>
+
+                <!-- Internal Message Interface -->
+                    <div class="internalvideocallinterfaceheader">
+                        <strong>Internal Message Interface</strong>
+                        <div style="display: flex; position: absolute; top: -27%; right: 9%; font-size: 1.35em; cursor: pointer;">+</div>
+                        <div style="display: flex; position: absolute; top: -70%; right: 5%; font-size: 1.35em; cursor: pointer;">_</div>
+                        <div style="display: flex; position: absolute; top: -35%; right: 1%; font-size: 1.35em; cursor: pointer;">x</div>
+                    </div>
+                    <div class="internalvideocallinterfacebackground">
+                        <div style="display: flex; position: absolute; height: 99%; width: 11%; right: 0%; border: 2px solid white;"></div>
+                        <div style="display: flex; position: absolute; height: 12%; width: 88%; bottom: 0%; border: 2px solid white;"></div>
+                        <div class="internalmessageinterfacecurrentconversation">
+                            <div style="display: flex; position: relative; color: white; height: 5vh; width: 5vw;">text</div>
+                            <div style="display: flex; position: relative; color: white; height: 5vh; width: 5vw;">text</div>
+                            <div style="display: flex; position: relative; color: white; height: 5vh; width: 5vw;">text</div>
+                            <div style="display: flex; position: relative; color: white; height: 5vh; width: 5vw;">text</div>
+                            <div style="display: flex; position: relative; color: white; height: 5vh; width: 5vw;">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+                        </div>
+                    </div>
+                <!-- End of Internal Message Interface -->
+
+                <br>
+
+                <!-- Downloading Popup -->
+                    <div class="downloadingpopupheader"><strong>Downloading Popup</strong></div>
+                    <div class="downloadingpopupbackground">
+                        <div class="downloadingpopupbox">
+                            <div class="downloadingpopupboxheader typinganimation">
+                                <div> Uploading... </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- End of Downloading Popup -->
+
+                <br>
+
                 <!-- Medical Interface -->
                     <div class="medicalinterfaceheader"><strong>Medical Interface</strong></div>
                     <div class="medicalinterfacebackground">
@@ -1293,7 +1444,7 @@
                 <!-- Bioscan Interface -->
                 <div class="bioscaninterfaceheader"><strong>Bioscan Interface</strong></div>
                 <div class="bioscaninterfacebackground">
-                    <div class="bioscannermodule" style="display: flex; position: absolute; height: 85%; width: 70%; top: 7.5%; left: 13.5%; border: 2px solid white;">
+                    <div class="bioscannermodule" style="display: flex; position: absolute; height: 85%; width: 70%; top: 7.5%; left: 13.5%; border: 2px solid white; border-radius: .7vw;">
                         <div class="biometricscanline"></div>
                     </div>
                 </div>
@@ -1356,8 +1507,7 @@
                         <div style="color: white;"> Login Box Submit Form / Next Page </div>
                         <br>
                         <div style="color: white;"> Project Unicorn  </div>
-
-
+                        <br>
 
                     </div>
 
@@ -1384,7 +1534,12 @@
                 <!-- End of Console Box -->
 
                 <!-- Footer -->
-                    <p class="footer" style="padding-top: 20vh;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+                    <div style="display: flex; position: static; bottom: 5%; height: 1vh; width: 99%; padding-top: 5vh;">
+                        <p class="footer" style="margin-left: 40%;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
+                        <button style="display: flex; position: absolute; color: black; background: none; border: none; cursor: pointer; color : lightgrey; margin-top: -.1%; margin-left: 7%; padding-bottom: 2vh;">+1 (972) 848-1714</button>
+                        <a href="https://discord.gg/ZVGfBPDnMM"><img src="../Otto.v1/images/minecraftdiscordicon.png" alt="minecraftdiscordicon" width="39" height="32" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 15.5%; padding-bottom: 2vh; cursor: pointer;" /></a>
+                        <img src="../Otto.v1/images/tiktokicon.png" alt="minecraftdiscordicon" width="43" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 19%; padding-bottom: 2vh; cursor: pointer;" />
+                    </div>
 
 </body>
 </html>

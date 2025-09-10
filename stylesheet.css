@@ -4199,6 +4199,170 @@
     } 
     /* End of Profile Page Interface */
 
+    /* Start of Main Menu Video Game Screen */
+
+     .mainmenuvideogamescreenheader {
+
+        display: flex;
+        position: relative;
+        border: 4px solid rgb(0, 255, 0);
+        height: 1.75vh;
+        width: 50vw;
+        background-color: rgb(0, 255, 0);
+        border-bottom: none;
+        font-size: .8em;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .mainmenuvideogamescreenbackground {
+
+        display: flex;
+        position: relative;
+        height: 40vh;
+        width: 50vw;
+        background-color: rgba(128, 128, 128, 0.321);
+        border: 4px solid rgb(0, 255, 0);
+
+    } 
+
+    #mainmenuvideogameselectmenu {
+
+        display: flex;
+        position: relative;
+        height: 90%;
+        width: 90%;
+        top: 5%;
+        left: 5%;
+        background-color: skyblue;
+
+    }
+
+    .mainmenuvideogameselectmenumainmenubutton {
+
+        display: flex;
+        position: absolute;
+        height: 7.5%;
+        width: 70%;
+        top: 30%;
+        left: 15%;
+        background-color: rgb(0, 255, 0);
+        border: none;
+        justify-content: center;
+
+    }
+
+    .mainmenuvideogameselectmenumainmenubutton:hover {
+
+        background-color: rgba(0, 255, 0, 0.341);
+
+    }
+
+    .mainmenuvideogamemainmenubackground {
+
+        display: flex;
+        position: relative;
+        height: 90%;
+        width: 90%;
+        top: 5%;
+        left: 5%;
+        background-color: skyblue;
+
+    }
+
+    .mainmenuvideogameselectmenutrainingrangebutton {
+
+        display: flex;
+        position: absolute;
+        height: 7.5%;
+        width: 70%;
+        top: 37.5%;
+        left: 15%;
+        background-color: rgb(0, 255, 0);
+        border: none;
+        justify-content: center;
+
+    }
+
+    .mainmenuvideogameselectmenutrainingrangebutton:hover {
+
+        background-color: rgba(0, 255, 0, 0.341);
+
+    }
+
+    .mainmenuvideogameselectmenusettingsbutton {
+
+        display: flex;
+        position: absolute;
+        height: 7.5%;
+        width: 70%;
+        top: 45%;
+        left: 15%;
+        background-color: rgb(0, 255, 0);
+        border: none;
+        justify-content: center;
+
+    }
+
+    .mainmenuvideogameselectmenusettingsbutton:hover {
+
+        background-color: rgba(0, 255, 0, 0.341);
+
+    }
+
+    #videogamemainmenu {
+
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    #videogamesettings {
+
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .videogamesettingschoosevideooutputsidescreenbutton {
+
+        display: flex;
+        position: absolute;
+        height: 7.5%;
+        width: 70%;
+        top: 45%;
+        left: 15%;
+        background-color: rgb(0, 255, 0);
+        border: none;
+        justify-content: center;
+
+    }
+
+    #videogamesettingschoosevideooutputsidescreen {
+
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 70%;
+        top: 0%;
+        left: 30%;
+        background-color: white;
+        color: white;
+
+    }   
+
+    
+
+
+    /* End of Main Menu Video Game Screen */
+
 
 
 

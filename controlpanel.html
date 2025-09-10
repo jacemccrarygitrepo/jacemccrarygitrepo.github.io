@@ -1463,6 +1463,55 @@
 
                 <br>
 
+                <!-- Main Menu Video Game Screen -->
+                <div class="mainmenuvideogamescreenheader"><strong> Main Menu </strong></div>
+                <div class="mainmenuvideogamescreenbackground">
+                    <div class="screen" id="mainmenuvideogameselectmenu">
+                            <button class="mainmenuvideogameselectmenumainmenubutton" onclick="showScreen('videogamemainmenu')"> Main Menu </button>
+                            <button class="mainmenuvideogameselectmenutrainingrangebutton" onclick="showScreen('videogametrainingrange')"> Training Range </button>
+                            <button class="mainmenuvideogameselectmenusettingsbutton" onclick="showScreen('videogamesettings')"> Settings </button>
+                    </div>
+
+                    <!-- Main Menu Screen -->
+                    <div class="screen" id="videogamemainmenu" style="display: none;">
+                        <button class="mainmenuvideogameselectmenumainmenubutton" onclick="showScreen('mainmenuvideogameselectmenu')"> Main Menu </button>
+                    </div>
+                    <!-- End of Main Menu Screen -->
+
+                    <!-- Main Menu Screen -->
+                    <div class="screen" id="videogametrainingrange" style="display: none;">
+                        <!-- Main Menu Stuff -->
+                    </div>
+                    <!-- End of Main Menu Screen -->
+
+                    <!-- Video Game Settings Screen -->
+                    <div class="screen" id="videogamesettings" style="display: none;">
+                        <button class="mainmenuvideogameselectmenumainmenubutton" onclick="showScreen('mainmenuvideogameselectmenu')"> Main Menu </button>
+
+                        <button class="videogamesettingschoosevideooutputsidescreenbutton" onclick="showScreen('videogamesettingschoosevideooutputsidescreen')"> Monitor </button>
+                        <div class="screen" id="videogamesettingschoosevideooutputsidescreen" style="display: none;"></div>
+
+                    </div>
+                    <!-- End of Main Menu Screen -->
+
+                </div>
+
+                <!-- Button
+                                    <button class="" onclick="showScreen('screenname')"></button>
+                                    <!-- Screen
+                                    <div class="screen" id="screenname" style="display: none;"></div>
+                                    <!-- Script-->
+                                    <script>
+                                        function showScreen(screenId) {
+                                            const screens = document.querySelectorAll('.screen');
+                                            screens.forEach(screen => screen.style.display = 'none');
+                                            document.getElementById(screenId).style.display = 'block';
+                                        }
+                                    </script>
+                <!-- End of Main Menu Video Game Screen -->
+
+                <br>
+
                 <!-- Idea Notepad -->
                 <div class="notepadinterfaceheader"><strong>Idea Notepad</strong></div>
                 <div class="notepadinterfacebackground">
@@ -1508,6 +1557,24 @@
                         <br>
                         <div style="color: white;"> Project Unicorn  </div>
                         <br>
+                        <button id="testjsbutton" onclick="testFunction()">button</button>
+                        <div>
+                            <button type="button"
+                                    onclick="document.getElementById('demo').innerHTML = Date()">
+                                    Click me to display Date and Time.
+                            </button>
+                            <p id="demo" style="color: white;"></p>
+                        </div>
+
+                        <script> //Test function for button inner html text change
+
+                            function testFunction() {
+
+                                document.getElementById("testjsbutton").innerHTML = "TESTTTTTTT";
+
+                            }
+
+                        </script>
 
                     </div>
 
@@ -1537,7 +1604,7 @@
                     <div style="display: flex; position: static; bottom: 5%; height: 1vh; width: 99%; padding-top: 5vh;">
                         <p class="footer" style="margin-left: 40%;">Copyright © 2024 Jace McCrary. All rights reserved.</p>
                         <button style="display: flex; position: absolute; color: black; background: none; border: none; cursor: pointer; color : lightgrey; margin-top: -.1%; margin-left: 7%; padding-bottom: 2vh;">+1 (972) 848-1714</button>
-                        <a href="https://discord.gg/ZVGfBPDnMM"><img src="../Otto.v1/images/minecraftdiscordicon.png" alt="minecraftdiscordicon" width="39" height="32" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 15.5%; padding-bottom: 2vh; cursor: pointer;" /></a>
+                        <img src="../Otto.v1/images/minecraftdiscordicon.png" alt="minecraftdiscordicon" width="39" height="32" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 15.5%; padding-bottom: 2vh; cursor: pointer;" />
                         <img src="../Otto.v1/images/tiktokicon.png" alt="minecraftdiscordicon" width="43" style="display: flex; position: absolute; margin-top: -0.67%; margin-left: 19%; padding-bottom: 2vh; cursor: pointer;" />
                     </div>
 
